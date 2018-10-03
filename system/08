@@ -1,0 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    08                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: gschaetz <gschaetz@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/03 12:56:41 by gschaetz          #+#    #+#              #
+#    Updated: 2018/10/03 12:58:24 by gschaetz         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+le fichier contenant les clefs RSA pour la connection en SSH et sur cette VM
+.ssh/authorized_key. de maniere generale le fichier et stocke dans le repository
+~/.ssh

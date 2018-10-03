@@ -1,0 +1,14 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    16                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: gschaetz <gschaetz@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/03 13:32:10 by gschaetz          #+#    #+#              #
+#    Updated: 2018/10/03 13:36:30 by gschaetz         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+un service qui permet de lancer des tache a horraire reguliere peut etre 
+cron qui s'utilise avec la commande crontab 
