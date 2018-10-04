@@ -1,0 +1,24 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    04                                                 :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: gschaetz <gschaetz@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2018/10/04 12:26:28 by gschaetz          #+#    #+#              #
+#    Updated: 2018/10/04 15:50:45 by gschaetz         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+origin="$(sudo cat /etc/save_crontab)";
+actuel="$(sudo md5sum /etc/crontab)";
+
+if [ -z "$origin" ]; then
+        md5sum /etc/crontab > /etc/save_crontab
+else
+        if [ "$origin" != "$actuel" ] && [ -n "$origin" ] ; then
+                echo le crontab a ete modifier, origin = $origin actuel = $actuel | mail -s "modif crontab" root
+                rm /etc/save_crontab
+                md5sum /etc/crontab > /etc/save_crontab
+        fi
+fi
